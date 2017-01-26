@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Da Bank</title>
+    <!-- Latest compiled and minified jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript required for Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- form begin -->
+      <h1>Da Bank</h1>
+      <form id="daBank">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="well">
+              <h1>Create new account:</h1>
+              <div class="form-group">
+                <label for="name" class="name-input">Name:</label>
+                <input type="text" value="" class="name-input" id="name-input">
+              </div>
+              <div class="form-group">
+                <label for="deposit" class="deposit-input">Deposit:</label>
+                <input type="text" value="" class="deposit-input" id="deposit-input">
+              </div>
+              <button type="submit" name="register" id="register-button">Register</button>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="well">
+              <h1>Deposit/Withdraw</h1>
+              <div class="form-group">
+                <label for="deposit" class="deposit-amount">Deposit:</label>
+                <input type="text" value="" class="deposit-amount" id="deposit-amount">
+              </div>
+              <div class="form-group">
+                <label for="withdraw" class="withdraw-amount">Withdraw:</label>
+                <input type="text" value="" class="withdraw-amount" id="withdraw-amount">
+              </div>
+              <button type="submit" name="update" id="update-button">Update</button>
+            </div>
+          </div>
+        </div>
+        <div class="row well current-balance-well">
+          <div class="form-group" class="current-balance">
+            <label for="current-balance" class="current-balance">Current Balance:</label>
+            <p>$ <span id="balance"></span></p>
+          </div>
+        </div>
+      <!-- form end -->
+      </form>
+    </div>
+  </body>
+</html>

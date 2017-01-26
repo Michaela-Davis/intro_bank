@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+}
+
+p {
+  background-color: white;
+  border: 2px solid black;
+}
+
+.current-balance-well {
+  background-color: teal;
+  text-align: center;
+  font-size: 130%;
+}

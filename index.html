@@ -26,8 +26,8 @@
                 <input type="text" value="" class="name-input" id="name-input">
               </div>
               <div class="form-group">
-                <label for="deposit" class="deposit-input">Deposit:</label>
-                <input type="text" value="" class="deposit-input" id="deposit-input">
+                <label for="deposit" class="deposit-input">Deposit: $</label>
+                <input type="text" value="0" class="deposit-input" id="deposit-input">
               </div>
               <button type="submit" name="register" id="register-button">Register</button>
             </div>
@@ -36,12 +36,12 @@
             <div class="well">
               <h1>Deposit/Withdraw</h1>
               <div class="form-group">
-                <label for="deposit" class="deposit-amount">Deposit:</label>
-                <input type="text" value="" class="deposit-amount" id="deposit-amount">
+                <label for="deposit" class="deposit-amount">Deposit: $</label>
+                <input type="text" value="0" class="deposit-amount" id="deposit-amount">
               </div>
               <div class="form-group">
-                <label for="withdraw" class="withdraw-amount">Withdraw:</label>
-                <input type="text" value="" class="withdraw-amount" id="withdraw-amount">
+                <label for="withdraw" class="withdraw-amount">Withdraw: $</label>
+                <input type="text" value="0" class="withdraw-amount" id="withdraw-amount">
               </div>
               <button type="submit" name="update" id="update-button">Update</button>
             </div>
@@ -50,11 +50,17 @@
         <div class="row well current-balance-well">
           <div class="form-group" class="current-balance">
             <label for="current-balance" class="current-balance">Current Balance:</label>
+            <h3>User:  <span id="user-name"></span></h3>
             <p>$ <span id="balance"></span></p>
           </div>
         </div>
       <!-- form end -->
       </form>
+      <div>
+        <ul class="customers">
+
+        </ul>
+      </div>
     </div>
   </body>
 </html>
